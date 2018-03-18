@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You Page | Ace in the Hole Multisport Events</title>
+  <link href="https://fonts.googleapis.com/css?family=Lora:700|Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/generic.css">
+  <link rel="stylesheet" href="style/thankyou.css">
+</head>
+
+<body>
+  <section>    
+    <p>Form submitted sucessfully!</p>
+    <p>You will be redirected to the home page after 5 seconds.</p>
+    <p>Or click <a href="index.php">here</a> to go back to the home page.</p>
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    var timer = 5; //seconds
+    website = "index.php"
+    function delayer() {
+      window.location = website;
+    }
+    setTimeout('delayer()', 1000 * timer); 
+  </script>
+</body>
+</html>
